@@ -1,0 +1,28 @@
+.c-item{
+    height: 480px;
+    width: 100%;
+}
+
+.c-img{
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.6);
+}
+
+/* .overview{
+    height: 180px;
+    background-color: #d3dae1;
+} */
+
+.lzy1Td {
+    display: inline-block;
+    max-height: 56px;
+    max-width: 225px;
+    padding: 8px 4px 8px 12px;
+    vertical-align: middle;
+}
+
+.social a {
+    padding: 0 .5em;
+    color: black;
+  }
