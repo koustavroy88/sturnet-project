@@ -54,9 +54,20 @@
             <li class="nav-item">
               <a class="nav-link active" href="index.html">Home</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item me-1">
               <a class="nav-link" href="page_2.html">News</a>
             </li>
+            <!-- <li class="nav-item dropdown"> -->
+              <select id="languageSwitcher"  class="form-select" aria-label="Default select example" style="width: auto; max-width: 120px;">
+                <option value="en">English</option>
+                <option value="ro">Română</option>
+                <option value="bg">Български</option>
+                <option value="gr">Ελληνικά</option>
+                <option value="tr">Türkçe</option>
+                <!-- <option value="md">Română (MD)</option> -->
+                <option value="ua">Українська</option>
+              </select>              
+            <!-- </li> -->
             <!-- <li class="nav-item">
               <a class="nav-link" href="#">Resources</a>
             </li> -->
@@ -66,64 +77,9 @@
     </nav>
 
     <main>
-      <!-- <section class="modal fade" tabindex="-1" id="booking-modal">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title">Book a tour</h5>
-              <button
-                type="button"
-                class="btn-close"
-                data-bs-dismiss="modal"
-                aria-label="Close"
-              ></button>
-            </div>
-            <div class="modal-body">
-              <form action="#">
-                <div class="row g-2">
-                  <div class="col-sm-6">
-                    <div class="form-floating">
-                      <input
-                        type="email"
-                        name="email1"
-                        id="email1"
-                        class="form-control"
-                        placeholder="Email address"
-                      />
-                      <label for="email1">Email address</label>
-                    </div>
-                  </div>
-
-                  <div class="col-sm-6">
-                    <div class="form-floating">
-                      <select class="form-select" id="select1">
-                        <option selected>Open this select menu</option>
-                        <option value="1">Norway - $899</option>
-                        <option value="2">Iceland - $799</option>
-                        <option value="3">Canada - $849</option>
-                      </select>
-                      <label for="select1">Select a package</label>
-                    </div>
-                  </div>
-                </div>
-              </form>
-            </div>
-            <div class="modal-footer">
-              <button
-                type="button"
-                class="btn btn-secondary"
-                data-bs-dismiss="modal"
-              >
-                Close
-              </button>
-              <button type="button" class="btn btn-primary">Checkout</button>
-            </div>
-          </div>
-        </div>
-      </section> -->
-
+ 
       <section id="packages" class="pt-5">
-        <h2
+        <h2 id="main_heading"
           class="text-center my-5"
           style="
             color: #1c4587;
@@ -131,8 +87,6 @@
             font-weight: 700;
           "
         >
-          Network for the Preservation of Sturgeon <br />and the Sustainability
-          of the Black Sea Basin Ecosystem
         </h2>
       </section>
 
@@ -157,18 +111,17 @@
               <img width="100%" src="logo_middle_left.jpg" />
             </div>
             <div class="col gy-5">
-              <p
+              <p id="program_priority"
                 style="
                   color: #1eb2a3;
                   font-family: 'Open Sans', Arial;
                   font-weight: 600;
                 "
               >
-                Programme priority: Blue and Smart Region
               </p>
-              <p class="mt-4">Project Duration: 30 months 08/2024 - 02/2027</p>
-              <p class="mt-4">Total budget: 1 148 409,60 Euros</p>
-              <p class="mt-4">EU funding: 1 033 568,60 Euros</p>
+              <p id="program_duration" class="mt-4"></p>
+              <p id="program_budget" class="mt-4"></p>
+              <p id="program_funding" class="mt-4"></p>
             </div>
           </div>
         </div>
@@ -189,128 +142,8 @@
         </div>
       </section>
 
-      <!-- <section class="overview">
-        <div class="container h-100 d-flex align-items-center">
-          <div class="row w-100 text-center">
-            <div class="col-xl">
-              <i class="bi bi-airplane-fill me-2"></i>
-              3 amazing destinations
-            </div>
-            <div class="col-xl">
-              <i class="bi bi-wallet-fill me-2"></i>
-              Only pay 5% upfront
-            </div>
-            <div class="col-xl">
-              <i class="bi bi-patch-check-fill me-2"></i>
-              1000's of customers
-            </div>
-          </div>
-        </div>
-      </section> -->
-
-      <!-- <section
-        id="hero-carousel"
-        class="carousel slide"
-        data-bs-ride="carousel"
-      >
-        <div class="carousel-indicators">
-          <button
-            type="button"
-            data-bs-target="#hero-carousel"
-            data-bs-slide-to="0"
-            class="active"
-            aria-current="true"
-            aria-label="Slide 1"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#hero-carousel"
-            data-bs-slide-to="1"
-            aria-label="Slide 2"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#hero-carousel"
-            data-bs-slide-to="2"
-            aria-label="Slide 3"
-          ></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active c-item">
-            <img
-              src="https://images.unsplash.com/photo-1739987017543-c79061509bc9?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-              class="d-block w-100 c-img"
-              alt="..."
-            />
-            <div class="carousel-caption top-0 mt-4">
-              <p class="fs-3 mt-5 text-uppercase">Discover the hidden world</p>
-              <h1 class="display-1 fw-bolder text-capitalize">
-                The Aurora Tours
-              </h1>
-              <button
-                class="btn btn-primary px-4 py-2 fs-5 mt-5"
-                data-bs-toggle="modal"
-                data-bs-target="#booking-modal"
-              >
-                Book a tour
-              </button>
-            </div>
-          </div>
-          <div class="carousel-item c-item">
-            <img
-              src="https://images.unsplash.com/photo-1740137660835-8a755519b9ed?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw3fHx8ZW58MHx8fHx8"
-              class="d-block w-100 c-img"
-              alt="..."
-            />
-            <div class="carousel-caption top-0 mt-4">
-              <p class="fs-3 mt-5 text-uppercase">Discover the hidden world</p>
-              <h1 class="display-1 fw-bolder text-capitalize">
-                The Aurora Tours
-              </h1>
-              <button class="btn btn-primary px-4 py-2 fs-5 mt-5">
-                Book a tour
-              </button>
-            </div>
-          </div>
-          <div class="carousel-item c-item">
-            <img
-              src="https://images.unsplash.com/photo-1740239431349-c5c00588150b?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwyM3x8fGVufDB8fHx8fA%3D%3D"
-              class="d-block w-100 c-img"
-              alt="..."
-            />
-            <div class="carousel-caption top-0 mt-4">
-              <p class="fs-3 mt-5 text-uppercase">Discover the hidden world</p>
-              <h1 class="display-1 fw-bolder text-capitalize">
-                The Aurora Tours
-              </h1>
-              <button class="btn btn-primary px-4 py-2 fs-5 mt-5">
-                Book a tour
-              </button>
-            </div>
-          </div>
-        </div>
-        <button
-          class="carousel-control-prev"
-          type="button"
-          data-bs-target="#hero-carousel"
-          data-bs-slide="prev"
-        >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button
-          class="carousel-control-next"
-          type="button"
-          data-bs-target="#hero-carousel"
-          data-bs-slide="next"
-        >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </section> -->
-
       <section class="container-fluid mt-5 d-flex align-items-center" style="height: 116px; background-color: rgba(87, 108, 126, 1);">
-        <div class="ms-auto me-auto" style="font-size: 35px; font-weight: 700; font-family: Roboto,sans-serif;color: #ffffff;">PROJECT PARTNERS</div>
+        <div id="project_partner" class="ms-auto me-auto" style="font-size: 35px; font-weight: 700; font-family: Roboto,sans-serif;color: #ffffff;"></div>
       </section>
 
       <section id="packages" class="pt-5">
@@ -430,21 +263,19 @@
       </section>
 
       <section class="container-fluid mt-5 d-flex align-items-center" style="height: 116px; background-color: rgba(87, 108, 126, 1);">
-        <div class="ms-auto me-auto" style="font-size: 35px; font-weight: 700; font-family: Roboto,sans-serif;color: #ffffff;">PROJECT GOAL AND OBJECTIVE</div>
+        <div id="project_goal" class="ms-auto me-auto" style="font-size: 35px; font-weight: 700; font-family: Roboto,sans-serif;color: #ffffff;"></div>
       </section>
 
       <section class="container">
-        <div class="" style="text-align: center; font-style: italic; justify-content: center; padding: 70px 0; font-size: 18px; font-weight: 450; line-height: 1.56;">
-          “SturNet” aims, through primary research, data collection and model development, to pilot and create an innovative digital toolset that will be able to provide interactive information about the sturgeons’ areas and periods of reproduction, both towards environmental, regulative and commercial stakeholders. In this direction, we aim to contribute to the preservation of the sturgeons’ habitats and aquaculture, and subsequently to the wider sustainability of the Black Sea Basin’s ecosystem.
+        <div id="project_goal_objective" class="" style="text-align: center; font-style: italic; justify-content: center; padding: 70px 0; font-size: 18px; font-weight: 450; line-height: 1.56;">
         </div>
       </section>
 
       <section class="container-fluid d-flex align-items-center" style="height: 116px; background-color: rgba(87, 108, 126, 1);">
-        <div class="ms-auto me-auto" style="font-size: 35px; font-weight: 700; font-family: Roboto,sans-serif;color: #ffffff;">ACTIVITIES AND RESULTS</div>
+        <div id="activity_results" class="ms-auto me-auto" style="font-size: 35px; font-weight: 700; font-family: Roboto,sans-serif;color: #ffffff;"></div>
       </section>
 
       <section id="faq" class="py-5">
-        <!-- <h2 class="my-5 text-center">FAQ</h2> -->
         <div class="container">
           <div class="accordion" id="accordionExample">
             <div class="accordion-item border-0">
@@ -458,8 +289,7 @@
                   aria-controls="collapseOne"
                   style="background-color: transparent;"
                 >
-                <p style="font-family: Roboto, sans-serif; font-size: 18pt; font-style: normal; font-weight: 700; line-height: 1.56; color: rgba(83, 115, 145, 1);margin-bottom: 0px;">
-                  Activity 1 Data Collection and Model Development
+                <p id="activity_1" style="font-family: Roboto, sans-serif; font-size: 18pt; font-style: normal; font-weight: 700; line-height: 1.56; color: rgba(83, 115, 145, 1);margin-bottom: 0px;">
                 </p>
                 
                 </button>
@@ -472,9 +302,7 @@
                 data-bs-parent="#accordionExample"
               >
                 <div class="accordion-body">
-                  <p style="font-size: 12pt;font-weight: 400; font-family: sans-serif; line-height: 1.56;">
-                    <strong>Activity:</strong> Comprehensive data collection conducted to gather biological, ecological, and hydrological information about sturgeon species and their habitats. This information will utilize to develop predictive models for habitat assessment and species conservation. <br><br>
-                    <strong>Results:</strong> The activity results in robust, validated models that can guide conservation efforts, identify critical habitats, and support sustainable management strategies for sturgeon populations.
+                  <p id="activity_1_content" style="font-size: 12pt;font-weight: 400; font-family: sans-serif; line-height: 1.56;">
                   </p>
                   </div>
                 </div>
@@ -491,8 +319,7 @@
                   aria-controls="collapseTwo"
                   style="background-color: transparent;"
                 >
-                <p style="font-family: Roboto, sans-serif; font-size: 18pt; font-style: normal; font-weight: 700; line-height: 1.56; color: rgba(83, 115, 145, 1);margin-bottom: 0px;">
-                  Activity 2 Transnational Sturgeon Network "SturNet" Development
+                <p id="activity_2" style="font-family: Roboto, sans-serif; font-size: 18pt; font-style: normal; font-weight: 700; line-height: 1.56; color: rgba(83, 115, 145, 1);margin-bottom: 0px;">
                 </p>
                 
                 </button>
@@ -505,9 +332,7 @@
                 data-bs-parent="#accordionExample"
               >
                 <div class="accordion-body">
-                  <p style="font-size: 12pt;font-weight: 400; font-family: sans-serif; line-height: 1.56;">
-                    <strong>Activity:</strong> Establishment a collaborative network of stakeholders, researchers, and policymakers across nations to address sturgeon conservation. The network aims to facilitate knowledge sharing, joint initiatives, and coordinated management efforts. <br><br>
-                    Results: The SturNet network enhances cross-border cooperation, leading to shared resources, streamlined conservation approaches, and stronger policy advocacy for sturgeon protection.
+                  <p id="activity_2_content" style="font-size: 12pt;font-weight: 400; font-family: sans-serif; line-height: 1.56;">
                   </p>
                   </div>
                 </div>
@@ -524,8 +349,7 @@
                   aria-controls="collapseThree"
                   style="background-color: transparent;"
                 >
-                <p style="font-family: Roboto, sans-serif; font-size: 18pt; font-style: normal; font-weight: 700; line-height: 1.56; color: rgba(83, 115, 145, 1);margin-bottom: 0px;">
-                  Activity 3 Digital Mapping Tool and Application
+                <p id="activity_3" style="font-family: Roboto, sans-serif; font-size: 18pt; font-style: normal; font-weight: 700; line-height: 1.56; color: rgba(83, 115, 145, 1);margin-bottom: 0px;">
                 </p>
                 
                 </button>
@@ -538,9 +362,7 @@
                 data-bs-parent="#accordionExample"
               >
                 <div class="accordion-body">
-                  <p style="font-size: 12pt;font-weight: 400; font-family: sans-serif; line-height: 1.56;">
-                    <strong>Activity:</strong> Development an interactive digital mapping tool to visualize and analyze sturgeon habitats and threats. The tool integrates data from various sources, offering a user-friendly interface for decision-makers and researchers. <br><br>
-                    <strong>Results:</strong> This tool improves accessibility to critical data, supported real-time monitoring, and empowered stakeholders to make informed decisions about sturgeon conservation and habitat management.
+                  <p id="activity_3_content" style="font-size: 12pt;font-weight: 400; font-family: sans-serif; line-height: 1.56;">
                   </p>
                   </div>
                 </div>
@@ -552,10 +374,7 @@
 
       <footer class="bg-light py-5 mt-5">
         <div class="container text-center">
-          <!-- <p class="display-5 mb-3">AuroraTours</p>
-          <small class="text-white-50"
-            >&copy; Copyright by ByteGrade. All rights reserved.</small
-          > -->
+   
           <p class="mb-0" style="font-style: italic; font-family: sans-serif; font-size: 10pt; font-weight: 450; line-height: 1.2;color: #0b5394;">
             BSB00172 SturNet - Interreg NEXT Black Sea Basin project, co-funded by the European Union
           </p>
@@ -563,5 +382,39 @@
       </footer>
     </main>
 
+    <script>
+      const switchLanguage = (lang) => {
+        // Save selected language to localStorage
+        localStorage.setItem('selectedLanguage', lang);
+    
+        // Load translation
+        fetch(`lang/${lang}.json`)
+          .then(response => response.json())
+          .then(data => {
+            for (const key in data) {
+              const element = document.getElementById(key);
+              if (element) {
+                element.innerHTML = data[key];
+              }
+            }
+          });
+    
+        // Also update the select dropdown value (if needed)
+        const selector = document.getElementById('languageSwitcher');
+        if (selector) {
+          selector.value = lang;
+        }
+      };
+    
+      document.getElementById('languageSwitcher').addEventListener('change', function () {
+        switchLanguage(this.value);
+      });
+    
+      // Load saved language or default to English
+      const savedLang = localStorage.getItem('selectedLanguage') || 'en';
+      switchLanguage(savedLang);
+    </script>
+    
+    
   </body>
 </html>
